@@ -1,0 +1,3 @@
+int array hosts_allowlist 0x0
+int string CenterText 0x0
+int xml automotive_app_desc 0x0
