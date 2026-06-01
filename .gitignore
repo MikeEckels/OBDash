@@ -1,15 +1,45 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# Gradle files and directories
+.gradle/
+build/
+capture/
+
+# Local configuration files (contains local SDK paths, passwords, etc.)
 local.properties
+
+# Android Studio / IntelliJ IDEA files
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/deploymentTargetSelector.xml
+*.iml
+*.ipr
+*.iws
+
+# Keystore files (NEVER commit your signing keys!)
+*.jks
+*.keystore
+*.p12
+
+# Device / Emulator files
+*.apk
+*.apks
+*.aab
+*.dex
+
+# Log files and caches
+*.log
+.analytics/
+
+# macOS file system noise
+.DS_Store
+
+# Windows file system noise
+Thumbs.db
+
+# Optional: Automotive / Head Unit DHU session logs
+# If you run Desktop Head Unit (DHU) testing logs inside your project root
+dhu_*.log
+dhu_sessions/

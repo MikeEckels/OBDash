@@ -21,5 +21,9 @@
             com.google.android.apps.automotive.templates.host</item>
     </string-array>
 
-    <string name="CenterText">Hello Stinky!</string>
+    <string name="CenterText">Hello World!</string>
+    <string name="HomeTab1">Gauges</string>
+    <string name="HomeTab2">Graphs</string>
+    <string name="HomeTab3">DTC\'s</string>
+    <string name="HomeTab4">Settings</string>
 </resources>

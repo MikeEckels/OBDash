@@ -1,9 +1,14 @@
-plugins {
-    alias(libs.plugins.android.application)
-}
+@file:Suppress("UnstableApiUsage")
+plugins { alias(libs.plugins.android.application) }
+
+val major = libs.versions.major.get().toInt()
+val minor = libs.versions.minor.get().toInt()
+val patch = libs.versions.patch.get().toInt()
+val gitOwner: String = providers.gradleProperty("github.owner").get()
+val gitPackage: String = providers.gradleProperty("github.package").get()
 
 android {
-    namespace = "com.example.obdash"
+    namespace = "com.mikeeckels.obdash"
 
     compileSdk {
         version = release(36) {
@@ -19,20 +24,27 @@ android {
         buildConfigField(
             "String",
             "RELEASE_URL",
-            "\"https://api.github.com/repos/mikeeckels/OBDash/releases/latest\""
+            "\"https://api.github.com/repos/${gitOwner}/${gitPackage}/releases/latest\""
         )
 
-        applicationId = "com.example.obdash"
+        applicationId = "com.mikeeckels.obdash"
         minSdk = 35
         targetSdk = 36
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = (major * 10000) + (minor * 100) + patch
+        versionName = "$major.$minor.$patch"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
+        debug {
+            isDebuggable = true
+            versionNameSuffix = "-debug"
+            applicationIdSuffix = ".debug"
+        }
+
         release {
+            isDebuggable = false
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
@@ -43,6 +55,16 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
+    }
+}
+
+androidComponents {
+    onVariants { variant ->
+        val buildType = variant.buildType ?: "release"
+
+        variant.outputs.forEach { output ->
+            output.outputFileName.set("$gitPackage-v$major.$minor.$patch-$buildType.apk")
+        }
     }
 }
 

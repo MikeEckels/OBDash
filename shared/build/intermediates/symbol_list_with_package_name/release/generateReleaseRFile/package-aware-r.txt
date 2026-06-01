@@ -1,4 +1,0 @@
-com.example.obdash.shared
-array hosts_allowlist
-string CenterText
-xml automotive_app_desc

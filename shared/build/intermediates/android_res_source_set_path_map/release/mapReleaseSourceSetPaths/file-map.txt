@@ -1,9 +1,0 @@
-com.example.obdash.shared-pngs-0 C:\Users\Mike\AndroidStudioProjects\OBDash\shared\build\generated\res\pngs\release
-com.example.obdash.shared-updated_navigation_xml-1 C:\Users\Mike\AndroidStudioProjects\OBDash\shared\build\generated\updated_navigation_xml\release
-com.example.obdash.shared-mergeReleaseResources-2 C:\Users\Mike\AndroidStudioProjects\OBDash\shared\build\intermediates\incremental\release\mergeReleaseResources\merged.dir
-com.example.obdash.shared-mergeReleaseResources-3 C:\Users\Mike\AndroidStudioProjects\OBDash\shared\build\intermediates\incremental\release\mergeReleaseResources\stripped.dir
-com.example.obdash.shared-release-4 C:\Users\Mike\AndroidStudioProjects\OBDash\shared\build\intermediates\merged_res\release\mergeReleaseResources
-com.example.obdash.shared-release-5 C:\Users\Mike\AndroidStudioProjects\OBDash\shared\build\intermediates\packaged_res\release\packageReleaseResources
-com.example.obdash.shared-main-6 C:\Users\Mike\AndroidStudioProjects\OBDash\shared\src\main\res
-com.example.obdash.shared-release-7 C:\Users\Mike\AndroidStudioProjects\OBDash\shared\src\release\res
-gradleHome-0 C:\Users\Mike\.gradle

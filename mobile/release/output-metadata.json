@@ -11,9 +11,9 @@
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 1,
-      "versionName": "1.0",
-      "outputFile": "automotive-release.apk"
+      "versionCode": 20000,
+      "versionName": "2.0.0",
+      "outputFile": "OBDash-v2.0.0-release.apk"
     }
   ],
   "elementType": "File",
@@ -22,14 +22,14 @@
       "minApi": 28,
       "maxApi": 30,
       "baselineProfiles": [
-        "baselineProfiles/1/automotive-release.dm"
+        "baselineProfiles/1/OBDash-v2.0.0-release.dm"
       ]
     },
     {
       "minApi": 31,
       "maxApi": 2147483647,
       "baselineProfiles": [
-        "baselineProfiles/0/automotive-release.dm"
+        "baselineProfiles/0/OBDash-v2.0.0-release.dm"
       ]
     }
   ],

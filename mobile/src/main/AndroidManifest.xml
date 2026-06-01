@@ -20,7 +20,7 @@
             android:resource="@xml/automotive_app_desc" />
 
         <activity
-            android:name=".MainActivity"
+            android:name=".OBDash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

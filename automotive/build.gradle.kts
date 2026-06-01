@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.obdash"
+    namespace = "com.mikeeckels.obdash"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -11,7 +11,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.obdash"
+        applicationId = "com.mikeeckels.obdash"
         minSdk = 35
         targetSdk = 36
         versionCode = 1

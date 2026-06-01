@@ -1,11 +1,12 @@
 <resources>
     <string name="app_name">OBDash</string>
     <string name="force_update">Force Update</string>
+    <string name="check_update">Check For Update</string>
     <string name="new_version">New version available</string>
     <string name="download">Download</string>
-    <string name="downloading">Downloading</string>
+    <string name="downloading">Downloading Update</string>
     <string name="download_complete">Download Complete</string>
-    <string name="install_dialog">Try to install this app as the Play Store?</string>
+    <string name="install_dialog">Try to install this app as the Play Store? Try a third party installer if this fails.</string>
     <string name="update_failed">Failed to download updates</string>
     <string name="no_updates">No new updates</string>
 </resources>
